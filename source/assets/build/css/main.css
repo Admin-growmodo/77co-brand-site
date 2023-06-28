@@ -1976,6 +1976,9 @@ h2.main-title.main-title-main {
   overflow: hidden;
   z-index: 2;
 }
+.popup-photo-gallery .showcase {
+display: block;
+}
 .showcase .pos-index-99 {
   position: relative;
   z-index: 1;
@@ -2016,9 +2019,9 @@ h2.main-title.main-title-main {
 }
 .showcase img {
   width: 50vw;
-  height: inherit;
+  height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .showcase .pos-index-99 img {
   height: 66vh;

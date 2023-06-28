@@ -13,7 +13,7 @@
                         {{-- col start --}}
                         <div class="col-lg-12">
                             {{-- section title start --}}
-{{--                            <div class="subtitle subtitle-light">The Case Studies</div>--}}
+                            {{-- <div class="subtitle subtitle-light">The Case Studies</div> --}}
                             {{-- section title end --}}
                             {{-- divider start --}}
                             <div class="inner-divider-half"></div>

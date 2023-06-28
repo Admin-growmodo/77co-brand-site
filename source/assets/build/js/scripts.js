@@ -425,6 +425,17 @@ document.addEventListener('DOMContentLoaded', function () {
   fadeOut(document.querySelector("#preloader"), 800);
   fadeOut(document.querySelector(".preloader-bg"), 800);
 
+  var top_header_bg = document.querySelector(".hero-bg.overlay");
+  var navbarLinks_f = document.querySelectorAll(".main-navigation .navbar-nav li a");
+  
+  if (typeof(top_header_bg) == 'undefined' || top_header_bg == null) {
+    navbarLinks_f.forEach(function (link) {
+      link.style.setProperty("color", "black", "important");
+    });
+    document.querySelector(".logo .logo-light").style.setProperty("filter", "brightness(0%)", "important");
+    document.querySelector(".logo .logo-dark").style.setProperty("filter", "brightness(0%)", "important");
+  }
+
   // Add lines to page
   var wrapper = createDiv('<div class="vertical-effect"></div>');
   appendTo("vertical-lines", '<div class="vertical-lines-wrapper"></div>');
@@ -467,6 +478,8 @@ document.addEventListener('DOMContentLoaded', function () {
       navbarLinks.forEach(function (link) {
         link.style.setProperty("color", "black", "important");
       });
+      document.querySelector(".logo .logo-light").style.setProperty("filter", "brightness(0%)", "important");
+      document.querySelector(".logo .logo-dark").style.setProperty("filter", "brightness(0%)", "important");
     } else {
       document.querySelector(".navbar-bg-switch").classList.remove("navbar-bg-switch-color");
       document.querySelector(".navbar-collapse").classList.remove("show");
@@ -480,6 +493,16 @@ document.addEventListener('DOMContentLoaded', function () {
       navbarLinks.forEach(function (link) {
         link.style.setProperty("color", "#FFF", "important");
       });
+      document.querySelector(".logo .logo-light").style.setProperty("filter", "brightness(100%)", "important");
+      document.querySelector(".logo .logo-dark").style.setProperty("filter", "brightness(100%)", "important");
+
+      if (typeof(top_header_bg) == 'undefined' || top_header_bg == null) {
+        navbarLinks.forEach(function (link) {
+          link.style.setProperty("color", "black", "important");
+        });
+        document.querySelector(".logo .logo-light").style.setProperty("filter", "brightness(0%)", "important");
+        document.querySelector(".logo .logo-dark").style.setProperty("filter", "brightness(0%)", "important");
+      }
     }
   });
 

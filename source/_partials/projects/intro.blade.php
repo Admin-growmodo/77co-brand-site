@@ -1,17 +1,3 @@
-{{--<div class="bg-light">--}}
-{{--    <div class="container-fluid nopadding">--}}
-{{--        <div class="extra-margin-all post-spacing">--}}
-{{--            {{-- row start --}}--}}
-{{--            <div class="row">--}}
-{{--                @include('_partials.components.large-column', ['title' => 'The Project', 'body' => $description , 'div_position' => 'Left'])--}}
-
-{{--                @include('_partials.components.large-column', ['title' => 'Results', 'body' => '<div class="d-flex justify-content-center">' . $html . '</div>'])--}}
-
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-
 <div class="bg-light">
     <div class="container-fluid nopadding">
         <div class="extra-margin-all">
@@ -92,7 +78,7 @@
         </div>
     </div>
 </div>
-
+@if($page->challenge)
 <div class="bg-light">
     <div class="container-fluid nopadding">
         <div class="extra-margin-all post-spacing">
@@ -111,7 +97,9 @@
         </div>
     </div>
 </div>
+@endif
 
+@if($page->approach)
 <div class="bg-light">
     <div class="container-fluid nopadding">
         <div class="extra-margin-all post-spacing">
@@ -130,7 +118,9 @@
         </div>
     </div>
 </div>
+@endif
 
+@if($page->approach)
 <div class="bg-light">
     <div class="container-fluid nopadding">
         <div class="extra-margin-all post-spacing">
@@ -149,39 +139,4 @@
         </div>
     </div>
 </div>
-
-
-{{--<div class="bg-light">--}}
-{{--    <div class="row">--}}
-{{--        <div class="col-lg-6">--}}
-{{--                    <div class="subtitle subtitle-light">The Challenge</div>--}}
-{{--                    <div class="inner-divider-half"></div>--}}
-{{--                    {{-- divider end --}}--}}
-{{--                    <div class="post-spacing-2">--}}
-{{--                        {{-- section txt start --}}--}}
-{{--                        <div class="intro">--}}
-{{--                            {!! $page->challenge !!}--}}
-{{--                        </div>--}}
-{{--                        {{-- section txt end --}}--}}
-{{--                    </div>--}}
-{{--                    {{-- divider start --}}--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            --}}{{--    <div class="inner-divider-half"></div>--}}
-{{--            {{-- divider end --}}--}}
-{{--        </div>--}}
-{{--        {{-- col end --}}--}}
-
-
-
-{{--    </div>--}}
-
-{{--    <div class="row">--}}
-{{--        @include('_partials.components.large-column', ['title' => 'Solution', 'body' => $page->solution, 'div_position' => 'Left'])--}}
-{{--    </div>--}}
-
-{{--    @if(isset($video))--}}
-{{--        <div class="inner-divider"></div>--}}
-{{--        @include('_partials.components.video', ['video' => $video_url])--}}
-{{--    @endif--}}
-{{--</div>--}}
+@endif

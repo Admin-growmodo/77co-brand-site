@@ -2117,6 +2117,11 @@ h2.main-title.main-title-main {
 	padding-left: 0;
 	padding-right: 0;
 }
+.popup-photo-gallery {
+	.showcase {
+		display: block;
+	}
+}
 .showcase {
 	position: relative;
 	display: flex;

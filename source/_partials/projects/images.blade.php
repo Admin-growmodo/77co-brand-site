@@ -1,4 +1,4 @@
-
+@php $count = 0; @endphp
 @if(count($page->images) > 0)
 <div class="bg-light">
     <div class="container-fluid nopadding">
@@ -6,7 +6,7 @@
 
             @foreach($page->images as $image)
                 {{-- row start --}}
-
+                @php $count += 1 @endphp
             <div class="row">
                 {{-- col start --}}
                 <div class="col-lg-12 popup-photo-gallery">
@@ -22,8 +22,9 @@
                 {{-- col end --}}
             </div>
             {{-- row end --}}
-
+            @if(count($page->images) > $count)
             <div class="inner-divider"></div>
+            @endif
         </div>
         @endforeach
     </div>

@@ -20,7 +20,7 @@
                             <div class="py-4">
                                 <h2 class="panel-title" id="headingOne">
                                 {{-- <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> --}}
-                                    {{ $service->title }}
+                                    {{ $service->title }} Treatment
                                 {{-- </button> --}}
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
