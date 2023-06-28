@@ -1,0 +1,31 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "mix",
+        "watch": "mix watch",
+        "staging": "NODE_ENV=staging mix",
+        "prod": "mix --production"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.11.7",
+        "autoprefixer": "^10.4.14",
+        "bootstrap": "^5.3.0",
+        "bs5-lightbox": "^1.8.3",
+        "laravel-mix": "^6.0.39",
+        "laravel-mix-jigsaw": "^2.0.0",
+        "postcss": "^8.4.24",
+        "postcss-import": "^14.0.0",
+        "postcss-js": "^4.0.1",
+        "postcss-load-config": "^4.0.1",
+        "postcss-nested": "^6.0.1",
+        "sass": "^1.62.0",
+        "sass-loader": "^12.6.0",
+        "swiper": "^9.4.1",
+        "tailwindcss": "^3.1.6"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.4.0",
+        "ionicons": "^7.1.2",
+        "vanilla-js": "^0.0.1"
+    }
+}

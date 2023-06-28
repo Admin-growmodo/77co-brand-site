@@ -1,0 +1,8 @@
++ bootstrap@5.3.0
+added 1 package from 1 contributor and audited 792 packages in 2.789s
+
+88 packages are looking for funding
+  run `npm fund` for details
+
+found 13 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
